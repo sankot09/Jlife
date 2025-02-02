@@ -1,0 +1,46 @@
+/* elements style */
+.bg {
+  height: 100vh;
+  width: 100vw;
+  background-color: #40455e;
+  animation: bg-gradient-animation 5s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.settings-panel {
+  height: 300px;
+  width: 450px;
+  background-color: var(--ui-primary-panel);
+  border-radius: 20px;
+  border: solid black 2px;
+}
+#themeSelect {
+  background-color: var(--ui-primary-button);
+  height: 45px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+/* animation */
+@keyframes bg-gradient-animation {
+  from {
+    background-color: #40455e;
+  }
+  50% {
+    background-color: #5f4881;
+  }
+  to {
+    background-color: #6c498f;
+  }
+}
+/* Global style */
+body {
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,8 @@
+html[theme="standart"] {
+  --ui-primary-panel: #ee09a5;
+  --ui-primary-button: #e609ee;
+}
+html[theme="green"] {
+  --ui-primary-panel: #2bbe4b;
+  --ui-primary-button: #274e31;
+}
