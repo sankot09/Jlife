@@ -2,11 +2,11 @@
 .bg {
   height: 100vh;
   width: 100vw;
-  background-color: #40455e;
+  background-color: var(--background-color);
   display: flex;
 }
 .hotbar {
-  background-color: #d6268d;
+  background-color: var(--hotbar-color);
   height: 50px;
   width: 98vw;
   border-radius: 20px;
@@ -15,6 +15,22 @@
   bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.hotbar-up {
+  background-color: var(--hotbar-color);
+  height: 50px;
+  width: 98vw;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  position: fixed;
+  position: sticky;
+  margin-top: 5px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -45,6 +61,55 @@
   border: 1px solid black;
   overflow: hidden;
 }
+#money {
+  background-color: #fccf07ec;
+  height: 45px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  -webkit-text-stroke: 1px black;
+  font-size: 30px;
+}
+#actions-button {
+  background-color: var(--ui-primary-button);
+  height: 45px;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  -webkit-text-stroke: 1px black;
+  font-size: var(--fonts-size);
+}
+#location-text {
+  background-color: var(--ui-primary-button);
+  height: 45px;
+  width: 200px;
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #000000;
+  -webkit-text-stroke: 1px black;
+  font-size: var(--fonts-size);
+}
+#actions-button:hover {
+  animation: btn-animation 300ms infinite alternate;
+  cursor: pointer;
+}
 /* Статы в рапперах */
 #health-points {
   background-color: #fc0543;
@@ -64,7 +129,15 @@
   width: 100%;
   border-radius: 20px;
 }
-
+/* animations */
+@keyframes btn-animation {
+  from {
+    background-color: var(--btn-animation-from);
+  }
+  to {
+    background-color: var(--btn-animation-to);
+  }
+}
 /* Глобальные стили */
 body {
   padding: 0;

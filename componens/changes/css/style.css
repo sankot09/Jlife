@@ -2,7 +2,7 @@
 #bg {
   height: 100vh;
   width: 100vw;
-  background-color: #40455e;
+  background-color: var(--background-color);
   animation: bg-gradient-animation 5s infinite alternate;
   display: flex;
   justify-content: center;
@@ -16,22 +16,22 @@
 
 .text-changers-style p {
   font-size: 70px;
-  color: #cb09ee;
+  color: var(--ui-primary-button);
   -webkit-text-stroke: 1px black;
   display: flex;
   gap: 4px;
   text-align: center;
-  background-color: #ee09b5;
+  background-color: var(--ui-primary-panel);
   border-radius: 20px;
   justify-content: center;
 }
 .text-changers-style h2 {
   font-size: 40px;
-  color: #cb09ee;
+  color: var(--ui-primary-button);
   -webkit-text-stroke: 1px black;
   gap: 4px;
   text-align: center;
-  background-color: #ee09b5;
+  background-color: var(--ui-primary-panel);
   border-radius: 10px;
   justify-content: center;
 }
@@ -51,22 +51,22 @@
 /* Анимации */
 @keyframes bg-gradient-animation {
   from {
-    background-color: #40455e;
+    background-color: var(--background-animation-from);
   }
   50% {
-    background-color: #5f4881;
+    background-color: var(--background-animation-50);
   }
   to {
-    background-color: #6c498f;
+    background-color: var(--background-animation-to);
   }
 }
 
 @keyframes btn-animation {
   from {
-    background-color: #ee09a5;
+    background-color: var(--btn-animation-from);
   }
   to {
-    background-color: #f36cc8;
+    background-color: var(--btn-animation-to);
   }
 }
 

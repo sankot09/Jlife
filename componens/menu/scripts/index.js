@@ -11,6 +11,25 @@ const messages = [
   "Игра на стадии разработки!",
   "Ня:3",
   "Hello Life Sim!",
+  "Hello Git!",
+  "vi.exe",
+  "LOL",
+  "-_-",
+  "qwerty",
+  "Ты не один!",
+  "Sankot Kotov",
+  "####",
+  "****",
+  "Аниме топ!",
+  "Жми играть!",
+  "o^o",
+  "Дед внутри",
+  "HELP",
+  "ERROR404",
+  "Installing Miner.bat",
+  "KABUUUUM!",
+  "Love is",
+  ""
 ];
 
 function getRandomInt(min, max) {

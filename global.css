@@ -1,8 +1,32 @@
 html[theme="standart"] {
   --ui-primary-panel: #ee09a5;
   --ui-primary-button: #e609ee;
+  --btn-animation-from: #e609ee;
+  --btn-animation-to: #f36cc8;
+  --background-color: #40455e;
+  --background-animation-from: #40455e;
+  --background-animation-50: #5f4881;
+  --background-animation-to: #6c498f;
+  --tips-color: #e609ee;
+  --tips-animation-from: #8136c7;
+  --tips-animation-50: #59065c;
+  --tips-animation-to: #d41ab5;
+  --hotbar-color: #d6268d;
+  --fonts-size: 10px;
 }
-html[theme="green"] {
-  --ui-primary-panel: #53ff78;
-  --ui-primary-button: #274e31;
+html[theme="orange"] {
+  --ui-primary-panel: #f18b04;
+  --ui-primary-button: #e6e342;
+  --btn-animation-from: #bea40e;
+  --btn-animation-to: #c7db54;
+  --background-color: #c97618;
+  --background-animation-from: #c97618;
+  --background-animation-50: #a16e0f;
+  --background-animation-to: #d37822;
+  --tips-color: #e66430;
+  --tips-animation-from: #e66430;
+  --tips-animation-50: #ad3a0c;
+  --tips-animation-to: #e94d10;
+  --hotbar-color: #e66430;
+  --fonts-size: 10px;
 }
