@@ -1,6 +1,6 @@
 /* Задний фон */
 #bg {
-  height: 100vh;
+  height: auto;
   width: 100vw;
   background-color: var(--background-color);
   animation: bg-gradient-animation 5s infinite alternate;

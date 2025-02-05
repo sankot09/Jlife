@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Комната</title>
-    <link href="../../global.css" rel="stylesheet"/>
+    <link href="../../global.css" rel="stylesheet" />
     <link href="./css/stytle.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="bg">
+    <div id="bg">
       <div class="hotbar-up">
-        <div id="location-text">Ваша комната</div>
+        <div id="location-button">Ваша комната</div>
         <div id="money">0$</div>
         <div id="actions-button">Действия</div>
       </div>
+      <!-- Кнопки -->
+      <div id="actions-window">
+        <div id="menu-button-actions">В меню</div>
+      </div>
+      <div id="location-window">
+        <div id="location-room-button">Ваша комната</div>
+        <div id="location-market-button">Магазин Ева</div>
+      </div>
+      <!-- Конец кнопки -->
       <div class="hotbar">
         <div class="health-points-wrapper">
+          <div class="health-text">Здоровье</div>
           <div id="health-points"></div>
         </div>
         <div class="hunger-points-wrapper">
+          <div class="hunger-text">Голод</div>
           <div id="hunger-points"></div>
         </div>
         <div class="energy-points-wrapper">
+          <div class="energy-text">Энергия</div>
           <div id="energy-points"></div>
         </div>
         <div id=""></div>
