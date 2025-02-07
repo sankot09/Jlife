@@ -17,77 +17,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.hotbar {
-  background-color: var(--hotbar-color);
-  height: 50px;
-  width: 98vw;
-  border-radius: 20px;
-  border: 1px solid black;
-  position: fixed;
-  bottom: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.hotbar-up {
-  background-color: var(--hotbar-color);
-  height: 50px;
-  width: 98vw;
-  border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  position: fixed;
-  position: sticky;
-  margin-top: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-/* Статы игрока врапперы */
-.health-points-wrapper {
-  background-color: #363636;
-  height: 45px;
-  width: 250px;
-  border-radius: 20px;
-  border: 1px solid black;
-  overflow: hidden;
-}
-.hunger-points-wrapper {
-  background-color: #363636;
-  height: 45px;
-  width: 250px;
-  border-radius: 20px;
-  border: 1px solid black;
-  overflow: hidden;
-}
-.energy-points-wrapper {
-  background-color: #363636;
-  height: 45px;
-  width: 250px;
-  border-radius: 20px;
-  border: 1px solid black;
-  overflow: hidden;
-}
-#money {
-  background-color: var(--ui-primary-button);
-  height: 45px;
-  width: 250px;
-  border-radius: 20px;
-  border: 1px solid black;
-  overflow: hidden;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  color: #ffffff;
-  -webkit-text-stroke: 1px black;
-  font-size: 30px;
-}
+
 #actions-button {
   background-color: var(--ui-primary-button);
   height: 45px;
@@ -135,53 +65,10 @@
   animation: btn-animation 300ms infinite alternate;
   cursor: pointer;
 }
-/* Статы в рапперах */
-#health-points {
-  background-color: #fc0543;
-  height: 45px;
-  width: 100%;
-  border-radius: 20px;
-}
-#hunger-points {
-  background-color: #fc9105;
-  height: 45px;
-  width: 100%;
-  border-radius: 20px;
-}
-#energy-points {
-  background-color: #88ff00;
-  height: 45px;
-  width: 100%;
-  border-radius: 20px;
-}
-.hunger-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  color: black;
-  -webkit-text-stroke: 1px black;
-  font-size: 20px;
-}
-.energy-text {
-  position: absolute;
-  top: 50%;
-  transform: translateX(125%) translateY(-50%);
-  color: black;
-  -webkit-text-stroke: 1px black;
-  font-size: 20px;
-}
-.health-text {
-  position: absolute;
-  top: 50%;
-  transform: translateX(125%) translateY(-50%);
-  color: black;
-  -webkit-text-stroke: 1px black;
-  font-size: 20px;
-}
+
 #actions-window {
   height: 400px;
-  width: 800px;
+  width: 820px;
   background-color: var(--ui-primary-panel);
   border-radius: 20px;
   display: grid;
@@ -237,7 +124,7 @@
   font-size: var(--fonts-size);
 }
 /* button actions */
-#menu-button-actions {
+.actions-button-class {
   background-color: var(--ui-primary-button);
   height: 45px;
   width: 200px;
@@ -270,4 +157,28 @@ body {
 
 a {
   text-decoration: none;
+}
+#game-over {
+  display: none;
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  background-color: var(--ui-primary-panel);
+  border-radius: 20px;
+  border: solid black 1px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20%;
+}
+#restart-button {
+  width: 120px;
+  height: 50px;
+  background-color: var(--ui-primary-button);
+  margin-top: 40px;
+  margin-left: -25%;
+  font-size: var(--fonts-size);
+}
+.game-over-text {
+  font-size: var(--fonts-size);
 }

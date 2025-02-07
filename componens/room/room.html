@@ -6,6 +6,8 @@
     <title>Комната</title>
     <link href="../../global.css" rel="stylesheet" />
     <link href="./css/stytle.css" rel="stylesheet" />
+    <link href="./css/interface.css" rel="stylesheet" />
+    <link href="./css/points.css" rel="stylesheet" />
   </head>
   <body>
     <div id="bg">
@@ -14,9 +16,22 @@
         <div id="money">0$</div>
         <div id="actions-button">Действия</div>
       </div>
+      <div id="game-over">
+        <div class="game-over-text">Вы больны (Штраф 50%)</div>
+        <div id="restart-button">Заплатить штраф</div>
+      </div>
       <!-- Кнопки -->
       <div id="actions-window">
-        <div id="menu-button-actions">В меню</div>
+        <div id="menu-button-actions" class="actions-button-class">В меню</div>
+        <div id="beg-button-actions" class="actions-button-class">
+          Попрашайничать (+3$)
+        </div>
+        <div id="buy-bread-button-actions" class="actions-button-class">
+          Хлеб (-2$ +10hg)
+        </div>
+        <div id="sleep-button-actions" class="actions-button-class">
+          Спать (-15hg +50en)
+        </div>
       </div>
       <div id="location-window">
         <div id="location-room-button">Ваша комната</div>

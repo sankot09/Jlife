@@ -1,0 +1,85 @@
+/* Статы игрока врапперы */
+.health-points-wrapper {
+  background-color: #363636;
+  height: 45px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.hunger-points-wrapper {
+  background-color: #363636;
+  height: 45px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+.energy-points-wrapper {
+  background-color: #363636;
+  height: 45px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+}
+/* Статы в рапперах */
+#health-points {
+  background-color: #fc0543;
+  height: 45px;
+  width: 100%;
+  border-radius: 20px;
+}
+#hunger-points {
+  background-color: #fc9105;
+  height: 45px;
+  width: 100%;
+  border-radius: 20px;
+}
+#energy-points {
+  background-color: #88ff00;
+  height: 45px;
+  width: 100%;
+  border-radius: 20px;
+}
+#money {
+  background-color: var(--ui-primary-button);
+  height: 45px;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid black;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+  -webkit-text-stroke: 1px black;
+  font-size: 30px;
+}
+/* Текст статов */
+.hunger-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: black;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+}
+.energy-text {
+  position: absolute;
+  top: 50%;
+  transform: translateX(125%) translateY(-50%);
+  color: black;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+}
+.health-text {
+  position: absolute;
+  top: 50%;
+  transform: translateX(125%) translateY(-50%);
+  color: black;
+  -webkit-text-stroke: 1px black;
+  font-size: 20px;
+}
